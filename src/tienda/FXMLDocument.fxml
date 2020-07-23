@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="424.0" prefWidth="527.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tienda.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="128.0" layoutY="30.0" onAction="#handleButtonAction" text="Click Me!" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Pane fx:id="panel" layoutX="15.0" layoutY="76.0" prefHeight="111.0" prefWidth="494.0">
+         <children>
+            <HBox fx:id="hboxAdd" layoutX="7.0" prefHeight="100.0" prefWidth="480.0" />
+         </children></Pane>
+      <Pane fx:id="otropane" layoutX="42.0" layoutY="233.0" prefHeight="165.0" prefWidth="401.0">
+         <children>
+            <ScrollPane layoutX="70.0" prefHeight="165.0" prefWidth="200.0">
+               <content>
+                  <FlowPane fx:id="flowItem" prefHeight="162.0" prefWidth="179.0" />
+               </content>
+            </ScrollPane>
+         </children></Pane>
+    </children>
+</AnchorPane>
